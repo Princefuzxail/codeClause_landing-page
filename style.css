@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Delicious+Handrawn&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro";
+  scroll-behavior: smooth;
+}
+#wrapper {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  padding: 8px 12px;
+  display: inline-block;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 15rem;
+  left: 45%;
+}
+.text-box h1 {
+  font-size: 82px;
+}
+.sub-heading {
+  font-size: 40px;
+  font-weight: 500;
+}
+.text-box p {
+  margin: 10 0 30px;
+  font-size: 14px;
+  color: white;
+}
+.hero-section-sub-heading {
+  font-size: 20px;
+  line-height: 45px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
